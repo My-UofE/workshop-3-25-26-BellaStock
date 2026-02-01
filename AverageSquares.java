@@ -19,16 +19,18 @@ public class AverageSquares {
         int sum = 0;
         int count = 0;
 
-        while (i <= endNum) {
+        do {
             int square = i * i;
             sum = sum + square;
             count++;
             i++;
-        }
+        } while (i <= endNum);
 
         double average = (double) sum / count;
 
+        System.out.println("Average of squares from " + startNum + " to " + endNum + ":");
         System.out.println(average);
+
 
     }
 }
