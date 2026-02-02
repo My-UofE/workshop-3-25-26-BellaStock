@@ -1,11 +1,14 @@
+import java.util.Scanner;
+
 public class SumSquares {
     public static void main(String[] args) {
 
-        int startNum = Integer.parseInt(args[0]);
-        int endNum = Integer.parseInt(args[1]);
+        Scanner in = new Scanner(System.in);
+        int startNum = in.nextInt();
+        int endNum = in.nextInt();
 
-        int i = startNum;
         int sum = 0;
+        int i = startNum;
 
         while (i <= endNum) {
             sum += i * i;
@@ -16,3 +19,4 @@ public class SumSquares {
         System.out.println(sum);
     }
 }
+

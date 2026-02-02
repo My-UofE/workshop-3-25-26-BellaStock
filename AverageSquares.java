@@ -1,12 +1,15 @@
+import java.util.Scanner;
+
 public class AverageSquares {
     public static void main(String[] args) {
 
-        int startNum = Integer.parseInt(args[0]);
-        int endNum = Integer.parseInt(args[1]);
+        Scanner in = new Scanner(System.in);
+        int startNum = in.nextInt();
+        int endNum = in.nextInt();
 
-        int i = startNum;
         int sum = 0;
         int count = 0;
+        int i = startNum;
 
         do {
             sum += i * i;
@@ -20,3 +23,4 @@ public class AverageSquares {
         System.out.println(average);
     }
 }
+
